@@ -1,0 +1,10 @@
+version: "3"
+services:
+  tf:
+    image: tensorflow/tensorflow:latest-jupyter
+#    container_name: tfl
+    build:
+      context: ./
+      dockerfile: ./data/dockerfile
+    ports:
+      - "8888:8888"
