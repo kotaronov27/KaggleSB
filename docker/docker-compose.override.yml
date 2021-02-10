@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  tf:
+    # volumes:
+    #   # Save database files in the volume
+    #   - dbdata:/var/lib/postgresql/data
+
+  # app:
+    # volumes:
+    #   # Output logs to the host directory.
+    #   - ./logs:/root/logs
+
+# volumes:
+#   dbdata:

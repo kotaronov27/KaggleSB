@@ -1,10 +1,13 @@
 version: "3"
 services:
   tf:
-    image: tensorflow/tensorflow:latest-jupyter
-#    container_name: tfl
+#    image: latest-jupyter
+    container_name: tf-jpy-lat
     build:
       context: ./
       dockerfile: ./data/dockerfile
+    tty: true
     ports:
       - "8888:8888"
+    volumes:
+      - ../Note:/home/note #:z

@@ -1,2 +1,11 @@
-FROM tensorflow/tensorflow:latest
-#LABEL maintainer="tensorflow-latest"
+FROM tensorflow/tensorflow:latest-jupyter
+LABEL maintainer="tensorflow-latest"
+
+# some options
+RUN python -m pip install --upgrade pip
+
+RUN python -m pip install -U ipykernel
+RUN python -m pip install -U pandas
+RUN python -m pip install -U matplotlib
+RUN python -m pip install -U seaborn
+RUN python -m pip install -U sklearn
