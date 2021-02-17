@@ -1,7 +1,7 @@
 version: '3'
 
-services:
-  tf:
+#services:
+#  tf:
     # volumes:
     #   # Save database files in the volume
     #   - dbdata:/var/lib/postgresql/data
