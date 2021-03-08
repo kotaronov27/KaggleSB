@@ -10,3 +10,11 @@ RUN python -m pip install -U matplotlib
 RUN python -m pip install -U seaborn
 RUN python -m pip install -U sklearn
 RUN python -m pip install -U keras
+
+
+## jupyter のインテリセンス周り。不要？
+#RUN python -m pip install -U jupyter-contrib-nbextensions
+#RUN python -m pip install -U jupyter-nbextensions-configurator
+## 拡張機能を有効化する
+#RUN jupyter contrib nbextension install
+#RUN jupyter nbextensions_configurator enable
