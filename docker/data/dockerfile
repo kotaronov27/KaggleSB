@@ -4,12 +4,20 @@ LABEL maintainer="tensorflow-latest"
 # some options
 RUN python -m pip install --upgrade pip
 
-RUN python -m pip install -U ipykernel
-RUN python -m pip install -U pandas
-RUN python -m pip install -U matplotlib
-RUN python -m pip install -U seaborn
-RUN python -m pip install -U sklearn
+# dl 
 RUN python -m pip install -U keras
+
+# jupyter plugin
+RUN python -m pip install -U ipykernel
+
+# data analisys
+RUN python -m pip install -U pandas
+RUN python -m pip install -U sklearn
+
+# plotter
+RUN python -m pip install -U seaborn
+RUN python -m pip install -U matplotlib
+RUN python -m pip install -U plotly
 
 
 ## jupyter のインテリセンス周り。不要？
